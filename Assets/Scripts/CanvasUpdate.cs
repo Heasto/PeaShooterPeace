@@ -11,7 +11,6 @@ public class CanvasUpdate : MonoBehaviour
     void Start()
     {
         MyGameManager = GameObject.FindGameObjectWithTag("GameManager");
-
         GameManagerScript = MyGameManager.GetComponent<GameManager>();
     }
 
