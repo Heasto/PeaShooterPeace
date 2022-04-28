@@ -396,7 +396,7 @@ MonoBehaviour:
   CameraPrefab: {fileID: 3063545241196773468, guid: 3367bb59e3bfe8049addf8b68f0238b9,
     type: 3}
   ArrowHeight: 5
-  Recoil: 15
+  Recoil: 60
   ReloadTimer: 0.8
   MaterialHatPlayer1: {fileID: 2100000, guid: 857ed957f9124914fb85788bf8e9fc5f, type: 2}
   MaterialBodyPlayer1: {fileID: 2100000, guid: 88b14e137937cba4c9129be44b4b51d6, type: 2}

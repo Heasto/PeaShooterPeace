@@ -108,7 +108,7 @@ public class PlayerControl : MonoBehaviour
 
                 Team1 = true;
 
-                int LayerPlayer02 = LayerMask.NameToLayer("Player2");
+                int LayerPlayer02 = LayerMask.NameToLayer("Player1");
                 gameObject.layer = LayerPlayer02;
 
                 int LayerPlayerSee02 = LayerMask.NameToLayer("Player2See");
@@ -139,7 +139,7 @@ public class PlayerControl : MonoBehaviour
                 Team2 = true;
 
 
-                int LayerPlayer03 = LayerMask.NameToLayer("Player3");
+                int LayerPlayer03 = LayerMask.NameToLayer("Player2");
                 gameObject.layer = LayerPlayer03;
 
                 int LayerPlayerSee03 = LayerMask.NameToLayer("Player3See");
@@ -168,7 +168,7 @@ public class PlayerControl : MonoBehaviour
 
                 Team2 = true;
 
-                int LayerPlayer04 = LayerMask.NameToLayer("Player4");
+                int LayerPlayer04 = LayerMask.NameToLayer("Player2");
                 gameObject.layer = LayerPlayer04;
 
                 int LayerPlayerSee04 = LayerMask.NameToLayer("Player4See");
@@ -267,7 +267,7 @@ public class PlayerControl : MonoBehaviour
                     newBullet.speed = bulletSpeed;
                 }
 
-                //myRigidbody.AddForce(-transform.forward * Recoil, ForceMode.VelocityChange);
+                myRigidbody.AddForce(transform.forward * Recoil, ForceMode.Impulse);
 
                 canShootAgain = !canShootAgain;
 
