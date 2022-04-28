@@ -60,6 +60,8 @@ public class PlayerControl : MonoBehaviour
     public bool Team1;
     public bool Team2;
 
+    public AudioClip GunSound;
+
 	void Start()
     {
         SpawnPoint_01 = GameObject.FindGameObjectWithTag("SpawnPoint_01");
@@ -273,12 +275,14 @@ public class PlayerControl : MonoBehaviour
                 {
                     bulletController newBullet = Instantiate(bullet1, firePoint.position, firePoint.rotation);
                     newBullet.speed = bulletSpeed;
+                    GetComponent<AudioSource>().PlayOneShot(GunSound);
                 }
 
                 if (Team2)
                 {
                     bulletController newBullet = Instantiate(bullet2, firePoint.position, firePoint.rotation);
                     newBullet.speed = bulletSpeed;
+                    GetComponent<AudioSource>().PlayOneShot(GunSound);
                 }
 
                 myRigidbody.AddForce(transform.forward * Recoil, ForceMode.Impulse);
