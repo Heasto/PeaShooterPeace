@@ -9,6 +9,10 @@ public class CameraFollow : MonoBehaviour
     public GameObject target;
     public int id;
 
+    public Vector3 offset;
+    public float smoothSpeed = 0.125f;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,32 +31,39 @@ public class CameraFollow : MonoBehaviour
             case 0:
                 camComponent.rect = new Rect(new Vector2(0, 0.49f), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
                 break;
 
             case 1:
                 camComponent.rect = new Rect(new Vector2(0.49f, 0.49f), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
                 break;
 
             case 2:
                 camComponent.rect = new Rect(new Vector2(0, 0), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer4See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See);
                 break;
 
             case 3:
                 camComponent.rect = new Rect(new Vector2(0.49f, 0), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer3See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See);
                 break;
         }
     }
 
     // Update is called once per frame
-    void Update()
+    //void Update()
+    //{
+    //    transform.position = new Vector3(target.transform.position.x, target.transform.position.y + height, target.transform.position.z - distance);
+    //}
+
+    private void FixedUpdate()
     {
-        transform.position = new Vector3(target.transform.position.x, target.transform.position.y + height, target.transform.position.z - distance);
+        Vector3 desiredPosition = new Vector3(target.transform.position.x, target.transform.position.y + height, target.transform.position.z - distance) + offset;
+        Vector3 smoothSpeedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothSpeedPosition;
     }
 }

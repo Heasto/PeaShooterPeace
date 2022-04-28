@@ -173,8 +173,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  theGun: {fileID: 966821438}
-  useController: 1
+  myRigidbody: {fileID: 0}
+  bulletSpeed: 0
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  firePoint: {fileID: 0}
+  SpawnPoint_01: {fileID: 0}
+  CameraPrefab: {fileID: 0}
+  ArrowHeight: 5
+  Recoil: 15
+  ReloadTimer: 1
+  MaterialHatPlayer1: {fileID: 0}
+  MaterialBodyPlayer1: {fileID: 0}
+  MaterialHatPlayer2: {fileID: 0}
+  MaterialBodyPlayer2: {fileID: 0}
+  MaterialHatPlayer3: {fileID: 0}
+  MaterialBodyPlayer3: {fileID: 0}
+  MaterialHatPlayer4: {fileID: 0}
+  MaterialBodyPlayer4: {fileID: 0}
+  CurrentHatMat: {fileID: 0}
+  CurrentBodyMat: {fileID: 0}
+  ArrowSprite: {fileID: 0}
+  PlayerId: 0
+  Team1: 0
+  Team2: 0
 --- !u!65 &101628078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1032,8 +1054,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  theGun: {fileID: 1420577851}
-  useController: 1
+  myRigidbody: {fileID: 0}
+  bulletSpeed: 0
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  firePoint: {fileID: 0}
+  SpawnPoint_01: {fileID: 0}
+  CameraPrefab: {fileID: 0}
+  ArrowHeight: 5
+  Recoil: 15
+  ReloadTimer: 1
+  MaterialHatPlayer1: {fileID: 0}
+  MaterialBodyPlayer1: {fileID: 0}
+  MaterialHatPlayer2: {fileID: 0}
+  MaterialBodyPlayer2: {fileID: 0}
+  MaterialHatPlayer3: {fileID: 0}
+  MaterialBodyPlayer3: {fileID: 0}
+  MaterialHatPlayer4: {fileID: 0}
+  MaterialBodyPlayer4: {fileID: 0}
+  CurrentHatMat: {fileID: 0}
+  CurrentBodyMat: {fileID: 0}
+  ArrowSprite: {fileID: 0}
+  PlayerId: 0
+  Team1: 0
+  Team2: 0
 --- !u!65 &749886431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1255,8 +1299,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  theGun: {fileID: 150240193}
-  useController: 1
+  myRigidbody: {fileID: 0}
+  bulletSpeed: 0
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  firePoint: {fileID: 0}
+  SpawnPoint_01: {fileID: 0}
+  CameraPrefab: {fileID: 0}
+  ArrowHeight: 5
+  Recoil: 15
+  ReloadTimer: 1
+  MaterialHatPlayer1: {fileID: 0}
+  MaterialBodyPlayer1: {fileID: 0}
+  MaterialHatPlayer2: {fileID: 0}
+  MaterialBodyPlayer2: {fileID: 0}
+  MaterialHatPlayer3: {fileID: 0}
+  MaterialBodyPlayer3: {fileID: 0}
+  MaterialHatPlayer4: {fileID: 0}
+  MaterialBodyPlayer4: {fileID: 0}
+  CurrentHatMat: {fileID: 0}
+  CurrentBodyMat: {fileID: 0}
+  ArrowSprite: {fileID: 0}
+  PlayerId: 0
+  Team1: 0
+  Team2: 0
 --- !u!65 &855323772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1948,8 +2014,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  theGun: {fileID: 664876510}
-  useController: 1
+  myRigidbody: {fileID: 0}
+  bulletSpeed: 0
+  bullet1: {fileID: 0}
+  bullet2: {fileID: 0}
+  firePoint: {fileID: 0}
+  SpawnPoint_01: {fileID: 0}
+  CameraPrefab: {fileID: 0}
+  ArrowHeight: 5
+  Recoil: 15
+  ReloadTimer: 1
+  MaterialHatPlayer1: {fileID: 0}
+  MaterialBodyPlayer1: {fileID: 0}
+  MaterialHatPlayer2: {fileID: 0}
+  MaterialBodyPlayer2: {fileID: 0}
+  MaterialHatPlayer3: {fileID: 0}
+  MaterialBodyPlayer3: {fileID: 0}
+  MaterialHatPlayer4: {fileID: 0}
+  MaterialBodyPlayer4: {fileID: 0}
+  CurrentHatMat: {fileID: 0}
+  CurrentBodyMat: {fileID: 0}
+  ArrowSprite: {fileID: 0}
+  PlayerId: 0
+  Team1: 0
+  Team2: 0
 --- !u!65 &1670776771
 BoxCollider:
   m_ObjectHideFlags: 0
