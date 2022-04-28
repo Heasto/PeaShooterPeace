@@ -5,10 +5,6 @@ using UnityEngine;
 
 public class PlayerHitManager : MonoBehaviour
 {
-    public int StartingPlayerHealthPts = 6;
-    public int PlayerHealthTeam1Pts;
-    public int PlayerHealthTeam2Pts;
-
     public Material HurtMat;
 
     private PlayerControl playerControlScript;
@@ -20,37 +16,22 @@ public class PlayerHitManager : MonoBehaviour
 
     public ParticleSystem HurtParticle;
 
+    public GameManager GameManagerScript;
+    public GameObject MyGameManager;
+
     // Start is called before the first frame update
     void Start()
     {
-        PlayerHealthTeam1Pts = StartingPlayerHealthPts;
-        PlayerHealthTeam2Pts = StartingPlayerHealthPts;
-
         playerControlScript = this.GetComponent<PlayerControl>();
 
+        MyGameManager = GameObject.FindGameObjectWithTag("GameManager");
 
+        GameManagerScript = MyGameManager.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHealthTeam1Pts <= 0)
-        {
-            Debug.Log("Team 2 wins");
-            //Destroy(this.gameObject);
-
-            // exit scene
-        }
-
-        if (PlayerHealthTeam2Pts <= 0)
-        {
-            Debug.Log("Team 1 wins");
-            //Destroy(this.gameObject);
-
-            // exit scene
-        }
-
-
 
         if (doHurtTimer)
         {
@@ -74,7 +55,7 @@ public class PlayerHitManager : MonoBehaviour
         {
             if (collision.gameObject.tag == "BulletTeam2")
             {
-                PlayerHealthTeam1Pts -= 1;
+                GameManagerScript.PlayerHealthTeam1Pts -= 1;
 
                 HurtParticle.Play(true);
             }
@@ -85,7 +66,7 @@ public class PlayerHitManager : MonoBehaviour
         {
             if (collision.gameObject.tag == "BulletTeam1")
             {
-                PlayerHealthTeam2Pts -= 1;
+                GameManagerScript.PlayerHealthTeam2Pts -= 1;
 
                 HurtParticle.Play(true);
             }

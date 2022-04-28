@@ -403,12 +403,12 @@ MonoBehaviour:
   ReloadTimer: 0.8
   MaterialHatPlayer1: {fileID: 2100000, guid: 857ed957f9124914fb85788bf8e9fc5f, type: 2}
   MaterialBodyPlayer1: {fileID: 2100000, guid: 88b14e137937cba4c9129be44b4b51d6, type: 2}
-  MaterialHatPlayer2: {fileID: 2100000, guid: f715137ba8bffb64d89717724467c644, type: 2}
-  MaterialBodyPlayer2: {fileID: 2100000, guid: b30310f0eb4e7ec4982352581e1f661a, type: 2}
-  MaterialHatPlayer3: {fileID: 2100000, guid: d62d75fbe4c71144c9e7d0903abd7dfc, type: 2}
-  MaterialBodyPlayer3: {fileID: 2100000, guid: 0b06183bd7f0c4745af911e3edc26943, type: 2}
-  MaterialHatPlayer4: {fileID: 2100000, guid: 23b2f681b97c4fc448cc34c9779d9d3e, type: 2}
-  MaterialBodyPlayer4: {fileID: 2100000, guid: d2b385ac17ca8f6408ac7b9da1e4d074, type: 2}
+  MaterialHatPlayer2: {fileID: 2100000, guid: 857ed957f9124914fb85788bf8e9fc5f, type: 2}
+  MaterialBodyPlayer2: {fileID: 2100000, guid: 88b14e137937cba4c9129be44b4b51d6, type: 2}
+  MaterialHatPlayer3: {fileID: 2100000, guid: f715137ba8bffb64d89717724467c644, type: 2}
+  MaterialBodyPlayer3: {fileID: 2100000, guid: b30310f0eb4e7ec4982352581e1f661a, type: 2}
+  MaterialHatPlayer4: {fileID: 2100000, guid: f715137ba8bffb64d89717724467c644, type: 2}
+  MaterialBodyPlayer4: {fileID: 2100000, guid: b30310f0eb4e7ec4982352581e1f661a, type: 2}
   CurrentHatMat: {fileID: 0}
   CurrentBodyMat: {fileID: 0}
   ArrowSprite: {fileID: 2761045703065806444}

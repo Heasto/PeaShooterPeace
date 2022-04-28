@@ -20,6 +20,7 @@ TagManager:
   - SpawnPoint_02
   - SpawnPoint_03
   - SpawnPoint_04
+  - GameManager
   layers:
   - Default
   - TransparentFX
