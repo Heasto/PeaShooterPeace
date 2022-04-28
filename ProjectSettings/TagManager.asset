@@ -16,6 +16,10 @@ TagManager:
   - Road
   - BulletTeam1
   - BulletTeam2
+  - SpawnPoint_01
+  - SpawnPoint_02
+  - SpawnPoint_03
+  - SpawnPoint_04
   layers:
   - Default
   - TransparentFX

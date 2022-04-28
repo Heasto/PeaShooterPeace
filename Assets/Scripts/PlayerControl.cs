@@ -62,6 +62,12 @@ public class PlayerControl : MonoBehaviour
 
 	void Start()
     {
+        SpawnPoint_01 = GameObject.FindGameObjectWithTag("SpawnPoint_01");
+        SpawnPoint_02 = GameObject.FindGameObjectWithTag("SpawnPoint_02");
+        SpawnPoint_03 = GameObject.FindGameObjectWithTag("SpawnPoint_03");
+        SpawnPoint_04 = GameObject.FindGameObjectWithTag("SpawnPoint_04");
+
+
         myRigidbody = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
 
@@ -202,7 +208,7 @@ public class PlayerControl : MonoBehaviour
                 break;
         }
 
-        this.transform.position = SpawnPoint_01.transform.position;
+        this.transform.position = PlayerCurrentSpawnPoint.transform.position;
 
     }
 
