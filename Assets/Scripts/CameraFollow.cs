@@ -24,6 +24,8 @@ public class CameraFollow : MonoBehaviour
         int LayerPlayer2See = LayerMask.NameToLayer("Player2See");
         int LayerPlayer3See = LayerMask.NameToLayer("Player3See");
         int LayerPlayer4See = LayerMask.NameToLayer("Player4See");
+        int LayerPlayerTeam1See = LayerMask.NameToLayer("PlayerTeam1See");
+        int LayerPlayerTeam2See = LayerMask.NameToLayer("PlayerTeam2See");
 
 
         switch (id)
@@ -31,25 +33,25 @@ public class CameraFollow : MonoBehaviour
             case 0:
                 camComponent.rect = new Rect(new Vector2(0, 0.49f), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam2See); 
                 break;
 
             case 1:
                 camComponent.rect = new Rect(new Vector2(0.49f, 0.49f), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam2See);
                 break;
 
             case 2:
                 camComponent.rect = new Rect(new Vector2(0, 0), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See);
                 break;
 
             case 3:
                 camComponent.rect = new Rect(new Vector2(0.49f, 0), new Vector2(0.49f, 0.49f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See);
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See);
                 break;
         }
     }

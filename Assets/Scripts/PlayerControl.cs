@@ -56,9 +56,6 @@ public class PlayerControl : MonoBehaviour
 
 	void Start()
     {
-
-        
-        
         myRigidbody = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
 
@@ -79,7 +76,6 @@ public class PlayerControl : MonoBehaviour
 
                 int LayerPlayer01 = LayerMask.NameToLayer("Player1");
                 gameObject.layer = LayerPlayer01;
-
 
 
                int LayerPlayerSee01 = LayerMask.NameToLayer("Player1See");

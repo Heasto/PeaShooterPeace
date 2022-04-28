@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  myRigidbody: {fileID: 0}
+  myRigidbody: {fileID: -5051242450032941787}
   bulletSpeed: 30
   bullet1: {fileID: 6629846672817868435, guid: 416e7fd0cb617c449b168449d9febd3b, type: 3}
   bullet2: {fileID: 6629846672817868435, guid: 3d19abb9481137743b8853e52acfbb8b, type: 3}
