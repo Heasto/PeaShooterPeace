@@ -21,7 +21,13 @@ public class PlayerControl : MonoBehaviour
     public bulletController bullet2;
     public Transform firePoint;
 
-    public Transform SpawnPoint_01;
+    public GameObject SpawnPoint_01;
+    public GameObject SpawnPoint_02;
+    public GameObject SpawnPoint_03;
+    public GameObject SpawnPoint_04;
+
+    public GameObject PlayerCurrentSpawnPoint;
+
     public GameObject CameraPrefab;
     private PlayerInput playerInput;
 
@@ -59,7 +65,6 @@ public class PlayerControl : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
         playerInput = GetComponent<PlayerInput>();
 
-        PlayerTransport();
         var cam = Instantiate(CameraPrefab).GetComponent<CameraFollow>();
         cam.target = this.gameObject;
         cam.id = playerInput.user.index;
@@ -72,11 +77,12 @@ public class PlayerControl : MonoBehaviour
         {
             case 0:
 
+                PlayerCurrentSpawnPoint = SpawnPoint_01;
+
                 Team1 = true;
 
                 int LayerPlayer01 = LayerMask.NameToLayer("Player1");
                 gameObject.layer = LayerPlayer01;
-
 
                int LayerPlayerSee01 = LayerMask.NameToLayer("Player1See");
                ArrowSprite.layer = LayerPlayerSee01;
@@ -101,6 +107,8 @@ public class PlayerControl : MonoBehaviour
                 break;
 
             case 1:
+
+                PlayerCurrentSpawnPoint = SpawnPoint_02;
 
                 Team1 = true;
 
@@ -132,6 +140,8 @@ public class PlayerControl : MonoBehaviour
 
             case 2:
 
+                PlayerCurrentSpawnPoint = SpawnPoint_03;
+
                 Team2 = true;
 
 
@@ -162,6 +172,8 @@ public class PlayerControl : MonoBehaviour
 
             case 3:
 
+                PlayerCurrentSpawnPoint = SpawnPoint_04;
+
                 Team2 = true;
 
                 int LayerPlayer04 = LayerMask.NameToLayer("Player2");
@@ -188,10 +200,10 @@ public class PlayerControl : MonoBehaviour
                 }
 
                 break;
-
         }
 
-       
+        this.transform.position = SpawnPoint_01.transform.position;
+
     }
 
     // Update is called once per frame
@@ -270,10 +282,5 @@ public class PlayerControl : MonoBehaviour
                 doReloadTimer = true;
             }
         }
-    }
-
-    public void PlayerTransport()
-    {
-        transform.position = SpawnPoint_01.transform.position;    
     }
 }

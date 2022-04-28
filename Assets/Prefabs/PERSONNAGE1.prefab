@@ -391,8 +391,15 @@ MonoBehaviour:
   bullet1: {fileID: 6629846672817868435, guid: 416e7fd0cb617c449b168449d9febd3b, type: 3}
   bullet2: {fileID: 6629846672817868435, guid: 3d19abb9481137743b8853e52acfbb8b, type: 3}
   firePoint: {fileID: 831049212180971671}
-  SpawnPoint_01: {fileID: 1471266903517495774, guid: 8a4b9fd2eff0aa84a9752abbfb856509,
+  SpawnPoint_01: {fileID: 3254549226791739112, guid: f74a77d35a7ae5e44abad16246151370,
     type: 3}
+  SpawnPoint_02: {fileID: 3254549226791739112, guid: f74a77d35a7ae5e44abad16246151370,
+    type: 3}
+  SpawnPoint_03: {fileID: 3254549226791739112, guid: f74a77d35a7ae5e44abad16246151370,
+    type: 3}
+  SpawnPoint_04: {fileID: 3254549226791739112, guid: f74a77d35a7ae5e44abad16246151370,
+    type: 3}
+  PlayerCurrentSpawnPoint: {fileID: 0}
   CameraPrefab: {fileID: 3063545241196773468, guid: 3367bb59e3bfe8049addf8b68f0238b9,
     type: 3}
   ArrowHeight: 5
