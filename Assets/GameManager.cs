@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public int PlayerHealthTeam1Pts;
     public int PlayerHealthTeam2Pts;
 
+    public bool DeathSoud;
+
     public AudioClip deathSound;
 
     // Start is called before the first frame update
@@ -25,13 +27,19 @@ public class GameManager : MonoBehaviour
         if (PlayerHealthTeam1Pts <= 0)
         {
             Debug.Log("Team 2 wins");
-            GetComponent<AudioSource>().PlayOneShot(deathSound);
+            DeathSoud = true;
         }
 
         if (PlayerHealthTeam2Pts <= 0)
         {
             Debug.Log("Team 1 wins");
+            DeathSoud = true;
+        }
+
+        if (DeathSoud)
+        {
             GetComponent<AudioSource>().PlayOneShot(deathSound);
+            DeathSoud = false;
         }
     }
 }
