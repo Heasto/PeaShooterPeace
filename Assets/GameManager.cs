@@ -36,10 +36,10 @@ public class GameManager : MonoBehaviour
             DeathSoud = true;
         }
 
-        if (DeathSoud)
-        {
-            GetComponent<AudioSource>().PlayOneShot(deathSound);
-            DeathSoud = false;
-        }
+        //if (DeathSoud)
+        //{
+        //    GetComponent<AudioSource>().PlayOneShot(deathSound);
+        //    DeathSoud = false;
+        //}
     }
 }

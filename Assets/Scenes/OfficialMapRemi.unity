@@ -1956,7 +1956,8 @@ MonoBehaviour:
   StartingPlayerHealthPts: 6
   PlayerHealthTeam1Pts: 0
   PlayerHealthTeam2Pts: 0
-  deathSound: {fileID: 8300000, guid: 41527a2239a1e2245b2fb204852d7004, type: 3}
+  DeathSoud: 0
+  deathSound: {fileID: 0}
 --- !u!4 &600454354
 Transform:
   m_ObjectHideFlags: 0
@@ -1989,7 +1990,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 41527a2239a1e2245b2fb204852d7004, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
