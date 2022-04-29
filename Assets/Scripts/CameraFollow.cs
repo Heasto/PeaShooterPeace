@@ -39,19 +39,19 @@ public class CameraFollow : MonoBehaviour
             case 1:
                 camComponent.rect = new Rect(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam2See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See); ;
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam2See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer3See) & ~(1 << LayerPlayer4See);
                 break;
 
             case 2:
                 camComponent.rect = new Rect(new Vector2(0, 0), new Vector2(0.5f, 0.5f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer4See); ;
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer4See);
                 break;
 
             case 3:
                 camComponent.rect = new Rect(new Vector2(0.5f, 0), new Vector2(0.5f, 0.5f));
 
-                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer3See); ;
+                camComponent.cullingMask = (LayerEverything << 0) & ~(1 << LayerPlayerTeam1See) & ~(1 << LayerPlayer1See) & ~(1 << LayerPlayer2See) & ~(1 << LayerPlayer3See);
                 break;
         }
     }

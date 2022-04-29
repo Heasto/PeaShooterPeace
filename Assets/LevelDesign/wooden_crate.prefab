@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4563553673233687409}
   - component: {fileID: 1778931383286437819}
   - component: {fileID: -1273993066650297108}
+  - component: {fileID: 9055203561782599807}
   m_Layer: 0
   m_Name: wooden_crate
   m_TagString: Untagged
@@ -96,3 +97,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6494220093297859469, guid: f1a843fe45a5851479129d1f98e8b34c, type: 3}
+--- !u!65 &9055203561782599807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265981598547752558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.035216056, y: 0.070023976, z: 0.035216056}
+  m_Center: {x: 0, y: 0.03626424, z: 8.942127e-17}
