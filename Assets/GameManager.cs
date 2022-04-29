@@ -27,13 +27,15 @@ public class GameManager : MonoBehaviour
         if (PlayerHealthTeam1Pts <= 0)
         {
             Debug.Log("Team 2 wins");
-            DeathSoud = true;
+            //DeathSoud = true;
+
+
         }
 
         if (PlayerHealthTeam2Pts <= 0)
         {
             Debug.Log("Team 1 wins");
-            DeathSoud = true;
+            //DeathSoud = true;
         }
 
         //if (DeathSoud)
